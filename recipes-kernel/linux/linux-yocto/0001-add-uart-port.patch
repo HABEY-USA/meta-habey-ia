@@ -1,0 +1,28 @@
+From d4bfdf29c31b20226a3f8317c7084b26d857d86e Mon Sep 17 00:00:00 2001
+From: Auto Configured <auto.configured>
+Date: Sat, 22 Aug 2015 23:08:29 -0700
+Subject: [PATCH] add uart port
+
+---
+ arch/x86/include/asm/serial.h |    6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/arch/x86/include/asm/serial.h b/arch/x86/include/asm/serial.h
+index 628c801..95290b6 100644
+--- a/arch/x86/include/asm/serial.h
++++ b/arch/x86/include/asm/serial.h
+@@ -23,7 +23,9 @@
+ 	/* UART CLK   PORT IRQ     FLAGS        */			\
+ 	{ 0, BASE_BAUD, 0x3F8, 4, STD_COM_FLAGS },	/* ttyS0 */	\
+ 	{ 0, BASE_BAUD, 0x2F8, 3, STD_COM_FLAGS },	/* ttyS1 */	\
+-	{ 0, BASE_BAUD, 0x3E8, 4, STD_COM_FLAGS },	/* ttyS2 */	\
+-	{ 0, BASE_BAUD, 0x2E8, 3, STD_COM4_FLAGS },	/* ttyS3 */
++	{ 0, BASE_BAUD, 0x3E8, 5, STD_COM_FLAGS },	/* ttyS2 */	\
++	{ 0, BASE_BAUD, 0x2E8, 6, STD_COM4_FLAGS },	/* ttyS3 */	\
++	{ 0, BASE_BAUD, 0x2E0, 7, STD_COM_FLAGS },      /* ttyS4 */	\
++	{ 0, BASE_BAUD, 0x2F0, 11, STD_COM_FLAGS },     /* ttyS5 */
+ 
+ #endif /* _ASM_X86_SERIAL_H */
+-- 
+1.7.9.5
+
