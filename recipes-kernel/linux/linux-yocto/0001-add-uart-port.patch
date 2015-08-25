@@ -1,7 +1,7 @@
-From d4bfdf29c31b20226a3f8317c7084b26d857d86e Mon Sep 17 00:00:00 2001
+From 02dcbd94b1310699a03f2a04e6224ce4f90ff600 Mon Sep 17 00:00:00 2001
 From: Auto Configured <auto.configured>
-Date: Sat, 22 Aug 2015 23:08:29 -0700
-Subject: [PATCH] add uart port
+Date: Mon, 24 Aug 2015 20:21:28 -0700
+Subject: [PATCH] add-uart-port
 
 ---
  arch/x86/include/asm/serial.h |    6 ++++--
