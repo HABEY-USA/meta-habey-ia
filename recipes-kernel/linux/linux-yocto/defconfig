@@ -1988,8 +1988,8 @@ CONFIG_SERIAL_8250_PNP=y
 CONFIG_SERIAL_8250_CONSOLE=y
 CONFIG_FIX_EARLYCON_MEM=y
 CONFIG_SERIAL_8250_PCI=y
-CONFIG_SERIAL_8250_NR_UARTS=6
-CONFIG_SERIAL_8250_RUNTIME_UARTS=6
+CONFIG_SERIAL_8250_NR_UARTS=4
+CONFIG_SERIAL_8250_RUNTIME_UARTS=4
 # CONFIG_SERIAL_8250_EXTENDED is not set
 # CONFIG_SERIAL_8250_DW is not set
 
@@ -2807,64 +2807,20 @@ CONFIG_SND_HDA_PREALLOC_SIZE=64
 # CONFIG_SND_HDA_INPUT_BEEP is not set
 # CONFIG_SND_HDA_INPUT_JACK is not set
 # CONFIG_SND_HDA_PATCH_LOADER is not set
-CONFIG_SND_HDA_CODEC_REALTEK=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
-CONFIG_SND_HDA_CODEC_ANALOG=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
-CONFIG_SND_HDA_CODEC_SIGMATEL=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
+CONFIG_SND_HDA_CODEC_REALTEK=y
+CONFIG_SND_HDA_CODEC_ANALOG=y
+CONFIG_SND_HDA_CODEC_SIGMATEL=y
 # CONFIG_SND_HDA_CODEC_VIA is not set
-CONFIG_SND_HDA_CODEC_HDMI=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
+CONFIG_SND_HDA_CODEC_HDMI=y
 CONFIG_SND_HDA_I915=y
-CONFIG_SND_HDA_CODEC_CIRRUS=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
-CONFIG_SND_HDA_CODEC_CONEXANT=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
-CONFIG_SND_HDA_CODEC_CA0110=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
-CONFIG_SND_HDA_CODEC_CA0132=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
+CONFIG_SND_HDA_CODEC_CIRRUS=y
+CONFIG_SND_HDA_CODEC_CONEXANT=y
+CONFIG_SND_HDA_CODEC_CA0110=y
+CONFIG_SND_HDA_CODEC_CA0132=y
 # CONFIG_SND_HDA_CODEC_CA0132_DSP is not set
-CONFIG_SND_HDA_CODEC_CMEDIA=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
-CONFIG_SND_HDA_CODEC_SI3054=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
-CONFIG_SND_HDA_GENERIC=m
-
-#
-# Set to Y if you want auto-loading the codec driver
-#
+CONFIG_SND_HDA_CODEC_CMEDIA=y
+CONFIG_SND_HDA_CODEC_SI3054=y
+CONFIG_SND_HDA_GENERIC=y
 CONFIG_SND_HDA_POWER_SAVE_DEFAULT=0
 # CONFIG_SND_HDSP is not set
 # CONFIG_SND_HDSPM is not set
